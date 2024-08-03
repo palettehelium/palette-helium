@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette and Helium Creations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('images/yellow-float.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            text-align: center;
+            color: #ffffff;
+        }
+        .button {
+            background-color: #7ab937;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #5a8e2f;
+        }
+        .form-container {
+            display: none;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 640px; /* Match iframe width */
+            margin: 0 auto;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            height: 916px; /* Match iframe height */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Palette and Helium Creations</h1>
+        <p>Twisting Balloons into Joy, Framing Art into Memories</p>
+        <button class="button" id="contact-btn">Contact Us</button>
+        <div class="form-container" id="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcKWH3lgyR_QCD74vh9szC_9GC7BNEpfqQfhzBR54oYnX7kA/viewform?embedded=true" width="640" height="916" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact-btn').addEventListener('click', function() {
+            var formContainer = document.getElementById('form-container');
+            formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
